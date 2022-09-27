@@ -10,10 +10,7 @@ def n_divisors(n):
 	return (total)
 
 def nth_triangle(n):
-	total = 0
-	for i in range(1, n + 1):
-		total += i
-	return (total)
+	return (n * (n + 1) // 2)
 
 def factorial(n):
 	i = 1
@@ -24,13 +21,13 @@ def factorial(n):
 	return (total)
 
 fact = factorial(500)
-i = 2
-triangle = 1
-while (triangle < fact):
-	#print(triangle)
-	if (n_divisors(i) > 500):
-		print(triangle)
-		break
-	triangle += i
-	i += 1
+print(fact)
+print(nth_triangle(int(sys.argv[1])))
 
+i = 0
+triangle = 0
+while (True):
+	triangle = nth_triangle(i)
+	if (triangle > fact):
+		print(triangle)
+	i += 1
