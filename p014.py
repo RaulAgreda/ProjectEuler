@@ -4,13 +4,11 @@ def generate_seq(n):
 	if (origin in checked):
 		return (checked[origin])
 	while (n != 1):
-		#print(f"{n}->", end = '')
 		if (n in checked):
 			checked[origin] = terms + checked[n]
 			return (checked[origin])
 		n = int(n / 2 if n % 2 == 0 else 3*n + 1)
 		terms+=1
-	#print("1")
 	checked[origin] = terms + 1
 	return (terms + 1)
 

@@ -24,7 +24,6 @@ for i in range(0, 20):
 				total_d *= matrix[i + k][j + k]
 			if (i + k < 20 and j - k >= 0):
 				total_d_i *= matrix[i + k][j - k]
-		#print(f"({i}, {j})\n{total_r}, {total_c}, {total_d}")
 		if (total_r > largest):
 			largest = total_r
 		if (total_c > largest):
