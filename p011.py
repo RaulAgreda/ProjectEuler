@@ -1,5 +1,6 @@
-f = open("ex11.txt", "r")
+f = open("p11.txt", "r")
 lines = f.read().split("\n")
+f.close()
 matrix = []
 for line in lines:
 	if (len(line) > 0):

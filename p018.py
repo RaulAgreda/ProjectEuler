@@ -27,4 +27,4 @@ class MaxTrianglePath:
 		return self.cache[((level, position))]
 
 if (__name__ == "__main__"):
-	print(MaxTrianglePath("ex018.txt").get_path(0, 0))
+	print(MaxTrianglePath("p018.txt").get_path(0, 0))
