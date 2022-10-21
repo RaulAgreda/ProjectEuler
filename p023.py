@@ -1,5 +1,3 @@
-import sys
-
 limit = 28123
 
 def is_abundant(n):
